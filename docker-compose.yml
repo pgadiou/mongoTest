@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 2_w_mongo
+    environment:
+      - APPLICATION_PORT=3310
+      - DATABASE_URL=mongodb://jeanphi:secret@host.docker.internal:27017/mmc
+      - DATABASE_SSL=false
+      - FOREST_AUTH_SECRET=dc1211124bed637972f8a1d1134db0f30c639ce7ac920bcde53eea28fc42cc66fdd77e838a637cee73fe738fde4c76ee
+      - FOREST_ENV_SECRET=97657e613bd760f85fe5f040f7df0fa3a545be793623478bcfacd25a042e5f32
+    ports:
+      - "3310:3310"
+    volumes:
+      - ./:/usr/src/app

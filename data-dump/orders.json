@@ -1,0 +1,88 @@
+/* 1 */
+{
+  "_id" : ObjectId("5ddd3b77bf21b9598982e2c6"),
+  "address" : {
+      "street" : "1 Mt Eliza Way",
+      "suburb" : "Mt Eliza",
+      "state" : "VIC",
+      "postcode" : "3930"
+  },
+  "fulfilled" : false,
+  "source" : "Web",
+  "items" : [ 
+      ObjectId("5ddbe1ddbf21b959898239a1"), 
+      ObjectId("5ddbe1e9bf21b959898239ac"), 
+      ObjectId("5ded9b1e08d310227de18d02")
+  ],
+  "totalPaid" : 15000,
+  "deliveryFee" : 13721,
+  "itemQtyBySku" : {
+      "1212218" : 10,
+      "9353333000058" : 20,
+      "9353333000119" : 50
+  },
+  "itemPriceByCategory" : {
+      "meals" : 1,
+      "snacks" : 12,
+      "brekkie" : 4,
+      "pos" : 3
+  },
+  "status" : "Unpaid",
+  "totalOutstanding" : 4200,
+  "instructions" : "",
+  "staffNotes" : "",
+  "email" : "dummy@homer.com.au",
+  "name" : "Store/Deli Manager",
+  "phone" : "(03) 1234 5324",
+  "companyName" : "Shop Mt Eliza",
+  "deliveryDate" : "2019-05-21T00:00:01.000+0000",
+  "timeSlot" : "8am & 6pm",
+  "invoiceNumber" : "123124",
+  "createdAt" : "2019-05-15T06:02:37.811+0000",
+  "__v" : 8
+}
+
+/* 2 */
+{
+  "_id" : ObjectId("5edd3b77bf21b9598982e2c6"),
+  "customer" : ObjectId("5ddd3ac8bf21b9598982e202"),
+  "address" : {
+      "street" : "1 Mt Eliza Way",
+      "suburb" : "Mt Eliza",
+      "state" : "VIC",
+      "postcode" : "3930"
+  },
+  "fulfilled" : false,
+  "source" : "Web",
+  "items" : [ 
+      ObjectId("5ddbe1ddbf21b959898239a1"), 
+      ObjectId("5ded9b1e08d310227de18d02"), 
+      ObjectId("5ddbe1e9bf21b959898239ac")
+  ],
+  "totalPaid" : 15000,
+  "deliveryFee" : 13721,
+  "itemQtyBySku" : {
+      "1212218" : 20,
+      "9353333000058" : 22,
+      "9353333000119" : 10
+  },
+  "itemPriceByCategory" : {
+      "meals" : 1,
+      "snacks" : 12,
+      "brekkie" : 4,
+      "pos" : 3
+  },
+  "status" : "Unpaid",
+  "totalOutstanding" : 4200,
+  "instructions" : "",
+  "staffNotes" : "",
+  "email" : "dummy@homer.com.au",
+  "name" : "Store/Deli Manager",
+  "phone" : "(03) 1234 5324",
+  "companyName" : "Shop Mt Eliza",
+  "deliveryDate" : "2019-05-21T00:00:01.000+0000",
+  "timeSlot" : "8am & 6pm",
+  "invoiceNumber" : "123124",
+  "createdAt" : "2019-05-15T06:02:37.811+0000",
+  "__v" : 8
+}

@@ -1,0 +1,25 @@
+/* 1 */
+{
+  "_id" : ObjectId("5ddbe1ddbf21b959898239a1"),
+  "description" : "fried chicken",
+  "picture" : "https://thestayathomechef.com/wp-content/uploads/2016/06/Fried-Chicken-4-1-500x375.jpg",
+  "sku" : NumberLong(9353333000058),
+  "quantity" : null
+}
+
+/* 2 */
+{
+  "_id" : ObjectId("5ddbe1e9bf21b959898239ac"),
+  "description" : "tikka massala chicken",
+  "picture" : "https://thestayathomechef.com/wp-content/uploads/2016/06/Fried-Chicken-4-1-500x375.jpg",
+  "sku" : NumberLong(9353333000119),
+  "quantity" : null
+}
+
+/* 3 */
+{
+  "_id" : ObjectId("5ded9b1e08d310227de18d02"),
+  "description" : "Potato Burek",
+  "__v" : 0,
+  "sku" : 1212218
+}
