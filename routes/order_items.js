@@ -4,7 +4,7 @@ const router = express.Router();
 const Liana = require('forest-express-mongoose');
 const models = require('../models');
 
-
+// this is a quick and dirty hack to obtain the orderId from the referer url - a proper way to go about it would be to include a regex
 function getOrderIdFromUrl(referer){
   let splitReferer = referer.split('/');
   return splitReferer.includes('summary')? splitReferer[splitReferer.length-2] : splitReferer[splitReferer.length-3];
@@ -28,13 +28,13 @@ async function updateItemsQuantity(req){
   let itemIds = req.body.data.attributes.ids;
   let items = await getItems(itemIds);
 
-  // STEP 3: iterate on the items array to update 
+  // STEP 3: iterate on the items array to update the value of items selected
   let newItemQuantity = req.body.data.attributes.values.Quantity;
-
   for (const item of items) {
     order.itemQtyBySku[item.sku] = newItemQuantity;
   }
 
+  // STEP 4: update the order with the new itemQtyBySu
   return models.orders.findOneAndUpdate(
     { _id: `${orderId}` },
     { $set: { 'itemQtyBySku' : order.itemQtyBySku } }
